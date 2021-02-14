@@ -1,0 +1,40 @@
+package day1;
+
+import java.util.Scanner;
+
+public class Q5_Right_Diagonal {
+
+	static int[][] inputMatrix(int row, int col) {
+		int arr[][] = new int[row][col];
+		for(int i = 0; i<row; i++) {
+			for(int j=0; j<col; j++) {
+				arr[i][j] = sc.nextInt();
+			}
+		}
+		return arr;
+	}
+
+	static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Write the order of the square matrix(N): ");
+		int n = sc.nextInt();
+		
+		System.out.println("Now enter "+n*n+" elements in the Array");
+		int A[][] = inputMatrix(n, n);
+		
+		sc.close();
+		
+		System.out.println("The right diagonal matrix is: ");
+		
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+				if(j==n-1-i)System.out.print(A[i][j]+" ");
+				else System.out.print("0 ");
+			}
+			System.out.println();
+		}		
+	}
+
+}
