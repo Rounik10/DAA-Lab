@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Q12_Calculate_nCr {
 
-	// Calulating nCr
+	// Calculating nCr
 	static int ncr(int n, int r) {
 		if(r<0 || n<0) return 0;
 		else if(r==0 || n==r) return 1;

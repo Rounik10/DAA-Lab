@@ -47,10 +47,8 @@ public class Q2_Matrix_Substraction {
 			for(int j=0; j<c;j++) {
 				C[i][j] = A[i][j] - B[i][j];
 			}
-		}
-		
+		}	
 		printMatrix(C);
 		
 	}
-	
 }
