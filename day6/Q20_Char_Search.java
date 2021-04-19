@@ -13,6 +13,9 @@ public class Q20_Char_Search {
 	}
 
 	public static void main(String[] args) {
+
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19");
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the string: ");
@@ -28,8 +31,6 @@ public class Q20_Char_Search {
 			int occ = getOccurences(str, c);
 			System.out.println("\""+c+"\""+" occurs " + occ + " times");
 		}
-		
 		sc.close();
 	}
-
 }

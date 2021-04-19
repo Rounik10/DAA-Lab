@@ -61,6 +61,8 @@ public class Q22_KnapSack {
 
 	public static void main(String[] args) {
 		
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19\n");
 		Scanner sc= new Scanner(System.in);
 		
 		System.out.println("Enter the number of Items: ");
@@ -95,9 +97,6 @@ public class Q22_KnapSack {
 		sc.close();
 		
 		int max = getMaxValItr(n,w,wt,val);
-		
-		System.out.println("Maximum value: "+max);
-		
+		System.out.println("Maximum value: "+max);	
 	}
-
 }

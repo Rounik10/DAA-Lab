@@ -23,22 +23,23 @@ public class Q8_min_and_max {
 	
 	public static void main(String[] args) {
 		
+		System.out.println("Name: Rounik Prashar");		
+		System.out.println("Roll No: BTECH/60023/19\n");
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter the number of elements: ");
 		int n = sc.nextInt();
 		int arr[] = new int[n];
 		
-		System.out.println("Now enter "+n+" elements in the list: ");
+		System.out.println("Now enter "+ n +
+				" elements in the list: ");
 		
 		for(int i=0; i<n; i++) {
 			arr[i] = sc.nextInt();
 		}
 		
 		sc.close();
-		
-		print_max_min(arr, n);
-		
-	}
-	
+		print_max_min(arr, n);	
+	}	
 }

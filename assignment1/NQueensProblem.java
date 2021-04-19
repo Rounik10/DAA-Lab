@@ -8,12 +8,6 @@ public class NQueensProblem {
 	
 	static boolean isSafePos(int x, int y) {
 		int n = board.length;
-		// row
-		for(int i=0; i<n;  i++) {
-			if(board[x][i] == 1 && i != y) {
-				return false;
-			}
-		}
 		
 		// column
 		for(int i=0; i<n;  i++) {
@@ -23,17 +17,11 @@ public class NQueensProblem {
 		}
 		
 		// left diagonal
-		for(int i=x+1, j=y+1; i<n && j<n; i++, j++) {
-			if(board[i][j]==1) return false;
-		}
 		for(int i=x-1, j=y-1; i>=0 && j>=0; i--, j--) {
 			if(board[i][j]==1) return false;
 		}
 		
 		// right diagonal
-		for(int i=x+1, j=y-1; i<n && j>=0; i++, j--) {
-			if(board[i][j]==1) return false;
-		}
 		for(int i=x-1, j=y+1; i>=0 && j<n; i--, j++) {
 			if(board[i][j]==1) return false;
 		}
@@ -68,6 +56,8 @@ public class NQueensProblem {
 	}
 	
 	public static void main(String[] args) {	 
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19\n");
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the value of N: ");

@@ -33,10 +33,8 @@ public class Q11_Strassens_Matrix_Multiplication {
 				for(int j=c; j<c+n/2; j++,tj++) {
 					ans[x][ti][tj] = arr[i][j];
 				}
-			}
-			
+			}	
 		}
-		
 		return ans;
 	}
 	
@@ -76,9 +74,7 @@ public class Q11_Strassens_Matrix_Multiplication {
 				ti++;
 			}
 		}
-
 		return ans;
-		
 	}
 	
 	static int[][] add(int A[][], int B[][]) {
@@ -134,7 +130,10 @@ public class Q11_Strassens_Matrix_Multiplication {
 	}
 	
 	public static void main(String[] args) {
-
+		
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19\n");
+		
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter the order of square matrices(N): ");
@@ -146,16 +145,17 @@ public class Q11_Strassens_Matrix_Multiplication {
 		int A[][] = new int[l][l];
 		int B[][] = new int[l][l];
 		
+		System.out.println("Enter "+n*n+" elements for matrix A: ");
+		
 		for(int i=0; i<n; i++) {
 			for(int j=0; j<n;j++) {
-				System.out.println("Enter A["+i+"]["+j+"]");
 				A[i][j] = sc.nextInt();
 			}
 		}
 		
+		System.out.println("Enter "+n*n+" elements for matrix B: ");
 		for(int i=0; i<n; i++) {
 			for(int j=0; j<n;j++) {
-				System.out.println("Enter B["+i+"]["+j+"]");
 				B[i][j] = sc.nextInt();
 			}
 		}
@@ -189,64 +189,6 @@ public class Q11_Strassens_Matrix_Multiplication {
 			}
 			System.out.println();
 		}
-		
+		System.out.println();
 	}
-	
 }
-	
-//	static int[][] correct(int[][] A, int[][] B) {
-//		int[][] C = new int[A.length][B.length];
-//		for(int i=0; i<A.length; i++) {
-//			for(int j=0; j< B.length; j++) {
-//				for(int k=0; k<A.length; k++) {
-//					C[i][j] += A[i][k] * B[k][j]; 
-//				}
-//			}
-//		}
-//		return C;
-//	}
-//	
-//	static boolean stressTest() {
-//		int n = (int)(Math.random()*5)+1;
-//		int l = nearestPowerOf2(n);
-//		
-//		int A[][] = new int[l][l];
-//		int B[][] = new int[l][l];
-//		
-//		for(int i=0; i<n; i++) {
-//			for(int j=0; j<n; j++) {
-//				A[i][j] = (int)(Math.random()*20)+1;
-//				B[i][j] = (int)(Math.random()*15)+1;
-//			}
-//		}
-//		
-//		int[][] ans1 = multiply(A,B);
-//		int[][] ans2 = correct(A,B);
-//
-//		for(int i=0; i<n; i++) {
-//			for(int j=0; j<n; j++) {
-//				if(ans1[i][j]!=ans2[i][j]) {
-//					
-//					System.out.println("A");
-//					printArr(A,false);
-//					
-//					System.out.println("B");
-//					printArr(B,false);
-//					
-//					System.out.println("Ans1:");
-//					printArr(ans1,false);
-//					
-//					System.out.println("Ans2:");
-//					printArr(ans2,false);
-//					System.out.println("i:"+i+" :: j"+j);
-//					
-//					return false;
-//				}
-//			}
-//		}
-//		
-//		System.out.println("Matched");
-//		
-//		return true;
-//		
-//	}

@@ -21,14 +21,15 @@ public class Q10_Find_Power {
 
 	public static void main(String[] args) {
 		
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19\n");
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter x: ");
 		int x = sc.nextInt();
 		System.out.println("Enter n: ");
 		int n = sc.nextInt();
 		sc.close();
-		System.out.println(x+" to the power "+n+" is:\n"+power(x,n));
-		
+		System.out.println(x+" to the power "+n+" is:\n"+power(x,n));	
 	}
-
 }

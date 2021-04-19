@@ -36,12 +36,10 @@ public class Q13_Large_Multiplication {
 	}
 	
 	static int[] powerTen(int A[], int n) {
-		
 		int len = A.length;
 		int ans[] = new int[n+len];
 		for(int i=0; i<len; i++) ans[i] = A[i];
 		return ans;
-		
 	}
 	
 	static int[] add(int[] A, int[] B) {
@@ -83,9 +81,13 @@ public class Q13_Large_Multiplication {
 	
 	public static void main(String[] args) {
 
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19\n");
+		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter two numbers: ");
+		System.out.println("Enter the first numbers: ");
 		String n1 = sc.next();
+		System.out.println("Enter the second number: ");
 		String n2 = sc.next();
 		sc.close();
 		
@@ -109,18 +111,16 @@ public class Q13_Large_Multiplication {
 		int[] num2 = nextIntArr(n2,n);
 		
 		if(isProdNeg) System.out.print("-");
+		System.out.println("Their Multiplication is: ");
 		printArr(large_multiply(num1,num2));
-		
 	}
 
 	private static int[] nextIntArr(String s, int n) {
-		
 		int ans[] = new int[n];
 		int ind = n-1;
 		for(int i=s.length()-1; i>=0; i--) {
 			ans[ind--] = (s.charAt(i)-'0');
 		}
-		
 		return ans;
 	}
 	
@@ -139,5 +139,4 @@ public class Q13_Large_Multiplication {
 		while(ans.charAt(i)=='0' && i<ans.length()-1) i++;
 		System.out.println(ans.substring(i));
 	}
-
 }

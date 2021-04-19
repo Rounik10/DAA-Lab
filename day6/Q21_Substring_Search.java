@@ -18,6 +18,9 @@ public class Q21_Substring_Search {
 
 	public static void main(String[] args) {
 		
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19\n");
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the String: ");
 		
@@ -31,9 +34,7 @@ public class Q21_Substring_Search {
 			String subStr = sc.next();
 			int occ = getOccurences(str, subStr);
 			System.out.println("It occurs "+occ + " times.");
-		}
-			
+		}		
 		sc.close();
 	}
-	
 }

@@ -37,6 +37,10 @@ public class Q28_String_BST {
 	}
 	
 	public static void main(String[] args) {
+
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19\n");
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number of nodes: ");
 		int n = sc.nextInt();
@@ -47,7 +51,6 @@ public class Q28_String_BST {
 		for(int i=1; i<n; i++) {
 			insert(root, sc.next());
 		}
-		
 		sc.close();
 		
 		System.out.println("Pre order traversal will be: ");

@@ -16,8 +16,15 @@ public class Q5_Right_Diagonal {
 
 	static Scanner sc = new Scanner(System.in);
 	
+	static void printInfo() {
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19");
+		System.out.println();
+	}
+	
 	public static void main(String[] args) {
 		
+		printInfo();
 		System.out.println("Write the order of the square matrix(N): ");
 		int n = sc.nextInt();
 		
@@ -36,5 +43,4 @@ public class Q5_Right_Diagonal {
 			System.out.println();
 		}		
 	}
-
 }

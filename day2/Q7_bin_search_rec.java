@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Q7_bin_search_rec {
 	
 	private static int Binary_Search_Rec(int[] arr, int key, int s, int e) {
-
 		if(s>e) return -1;
 		int mid = (s+e)/2;
 		
@@ -16,6 +15,9 @@ public class Q7_bin_search_rec {
 	}
 
 	public static void main(String[] args) {
+
+		System.out.println("Name: Rounik Prashar");		
+		System.out.println("Roll No: BTECH/60023/19\n");
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -37,8 +39,5 @@ public class Q7_bin_search_rec {
 		
 		if(index == -1) System.out.println(key+" doesnot exist in the list");
 		else System.out.println(key+ " exists at index: "+index);
-
 	}
-
-	
 }

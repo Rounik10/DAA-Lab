@@ -6,14 +6,12 @@ import java.util.Scanner;
 public class Q9_merge_sort {
 	
 	private static void mergeSort(int[] arr, int s, int e) {
-	
 		if(s<e) {
 			int mid = (s+e)/2;
 			mergeSort(arr,s,mid);
 			mergeSort(arr,mid+1,e);
 			merge(arr,s,mid,e);
 		}
-		
 	}
 	
 	private static void merge(int[] arr, int s, int mid, int e) {
@@ -40,14 +38,15 @@ public class Q9_merge_sort {
 		ind = 0;
 		for(int k=s; k<=e; k++) {
 			arr[k] = ans[ind++];
-		}
-		
+		}	
 	}
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19\n");
 		
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number of elements: ");
 		int n = sc.nextInt();
 		int arr[] = new int[n];
@@ -57,15 +56,14 @@ public class Q9_merge_sort {
 		for(int i=0; i<n; i++) {
 			arr[i] = sc.nextInt();
 		}
-		
 		sc.close();
 		
 		System.out.println("The sorted list is: ");
 		mergeSort(arr,0,n-1);
 		for(int i=0; i<n; i++) System.out.print(arr[i]+" ");
-	
 	}
-
+	
+	// For Testing 
 	static boolean stressTest() {
 		
 		int n = (int) (Math.random()*10)+1;
@@ -91,10 +89,7 @@ public class Q9_merge_sort {
 				return false;
 			}
 		}
-		
 		System.out.println("MATCHED");
-		return true;
-		
+		return true;	
 	}
-	
 }

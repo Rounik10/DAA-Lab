@@ -3,7 +3,6 @@ package day6;
 import java.util.Scanner;
 
 public class Q23_Balanced_BST {
-
 	static class Node {
 		int data;
 		Node left, right;
@@ -31,7 +30,8 @@ public class Q23_Balanced_BST {
 	}
 	
 	public static void main(String[] args) {
-
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19\n");
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter the number of nodes!");
@@ -50,5 +50,4 @@ public class Q23_Balanced_BST {
 		postOrder(root);
 		System.out.println();
 	}
-
 }

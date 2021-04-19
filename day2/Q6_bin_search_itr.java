@@ -26,6 +26,9 @@ public class Q6_bin_search_itr {
 	
 	public static void main(String[] args) {
 		
+		System.out.println("Name: Rounik Prashar");		
+		System.out.println("Roll No: BTECH/60023/19\n");
+
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter the number of elements: ");
@@ -47,5 +50,4 @@ public class Q6_bin_search_itr {
 		if(index == -1) System.out.println(key+" doesnot exist in the list");
 		else System.out.println(key+ " exists at index: "+index);
 	}
-
 }

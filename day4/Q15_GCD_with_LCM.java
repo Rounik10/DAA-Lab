@@ -19,18 +19,18 @@ public class Q15_GCD_with_LCM {
 	
 	public static void main(String[] args) {
 
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19\n");
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter the first number.");
 		int a = sc.nextInt();
 		
-		System.out.println("Eneter the second number.");
-		int b = sc.nextInt();
-		
+		System.out.println("Enter the second number.");
+		int b = sc.nextInt();		
 		sc.close();
 		
+		System.out.println("GCD of "+a+" and "+b+" is: ");
 		System.out.println(gcd(a,b));
-		
 	}
-
 }

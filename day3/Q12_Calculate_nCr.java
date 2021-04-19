@@ -13,6 +13,9 @@ public class Q12_Calculate_nCr {
 	
 	public static void main(String[] args) {
 
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19\n");
+		
 		// Taking User Input
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter 'n': ");
@@ -27,5 +30,4 @@ public class Q12_Calculate_nCr {
 		System.out.println("nCr is:\n"+ncr(n,r));
 
 	}
-
 }

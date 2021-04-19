@@ -6,7 +6,7 @@ package day1;
  * and the values of matrix ‘A’ and matrix ‘B’ are also entered by the user at runtime.
  */
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Q1_Matrix_Addition {
 	
@@ -22,9 +22,10 @@ public class Q1_Matrix_Addition {
 	
 
 	static void printMatrix(int [][] M) {
+		System.out.println("Sum Matrix ");
 		for(int i=0; i<M.length; i++) {
 			for(int j=0; j<M[0].length; j++) {
-				System.out.print(M[i][j]+"\t");
+				System.out.print(M[i][j]+" ");
 			}
 			System.out.println();
 		}
@@ -32,8 +33,15 @@ public class Q1_Matrix_Addition {
 	
 	static Scanner sc = new Scanner(System.in);
 	
+	static void printInfo() {
+		System.out.println("Name: Rounik Prashar");
+		System.out.println("Roll No: BTECH/60023/19");
+		System.out.println();
+	}
+	
 	public static void main(String[] args) {
-
+		
+		printInfo();
 		// Taking User Input
 		System.out.println("Enter the number of rows: ");
 		int r = sc.nextInt();
@@ -57,8 +65,6 @@ public class Q1_Matrix_Addition {
 			}
 		}
 		
-		printMatrix(C);
-		
+		printMatrix(C);	
 	}
-
 }
